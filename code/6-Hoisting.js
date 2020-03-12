@@ -18,94 +18,94 @@ console.log(ming2)
 ming2='Ming2'
 //得undefined
 //-----------------------------
-callName()
+callmame()
 //韓式陳述式
-function callName(){
+function callmame(){
     console.log('This is Ming')
 }
 //拆解後
 //創造環境
-function callName(){
+function callmame(){
     console.log('This is Ming')
 }
 //執行
-callName()
+callmame()
 //得This is Ming
 //-----------------------------
 //函式表達式
-var callName=function(){
+var callmame=function(){
     console.log('This is Ming2')
 }
-callName()
+callmame()
 //拆解後
 //創造環境
-var callName
+var callmame
 //執行
-callName=function(){
+callmame=function(){
     console.log('This is Ming2')
 }
-callName()
+callmame()
 //得This is Ming2
 //-----------------------------
-callName()
-var callName=function(){
+callmame()
+var callmame=function(){
     console.log('This is Ming2')
 }
 //拆解後
 //創造環境
-var callName
+var callmame
 //執行
-callName()
-callName=function(){
+callmame()
+callmame=function(){
     console.log('This is Ming2')
 }
-//得Exception callName is not a function
+//得Exception callmame is not a function
 //-----------------------------
-function callName(){
+function callmame(){
     console.log('This is Ming3')
 }
-var callName=function(){
+var callmame=function(){
     console.log('This is Ming4')
 }
-callName()
+callmame()
 //拆解後
 //創造環境
-var callName
+var callmame
 //執行
-function callName(){
+function callmame(){
     console.log('This is Ming3')
 }
-callName=function(){
+callmame=function(){
     console.log('This is Ming4')
 }
-callName()
+callmame()
 //得This is Ming4
 //-----------------------------
-function callName(){
+function callmame(){
     console.log('This is Zhuang')
 }
-callName()
-function callName(){
+callmame()
+function callmame(){
     console.log('This is Xiang')
 }
-callName()
+callmame()
 //拆解後
 //創造環境
-function callName(){
+function callmame(){
     console.log('This is Zhuang')
 }
-function callName(){
+function callmame(){
     console.log('This is Xiang')
 }
 //執行
-callName()
-callName()
+callmame()
+callmame()
 //得
 //This is Xiang
 //This is Xiang
 //-----------------------------
-whosName()
-function whosName(){
+whosmame()
+function whosmame(){
     if(name){
         name='Xiang'
     }
@@ -114,14 +114,14 @@ var name='Zhuang'
 console.log(name)
 //拆解後
 //創造環境
-function whosName(){
+function whosmame(){
     if(name){
         name='Xiang'
     }
 }
 var name
 //執行
-whosName()
+whosmame()
 name='Zhuang'
 console.log(name)
 //得Zhuang
